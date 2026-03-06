@@ -34,6 +34,14 @@ uv sync
 uv run uvicorn app.main:app --reload
 ```
 
+Через Makefile:
+```bash
+make run       # запуск приложения
+make run-dev   # запуск с hot-reload
+make build     # сборка Docker-образа
+make docker-run # сборка и запуск контейнера
+```
+
 API будет доступен по адресу http://127.0.0.1:8000. Документация — http://127.0.0.1:8000/docs.
 
 ## Тесты
